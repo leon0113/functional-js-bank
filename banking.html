@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16">Let's make some <span class="font-bold text-orange-600">Money</span>!!!
+        </h1>
+    </header>
+    <main class=" w-3/4 mx-auto">
+        <!-- 
+            ! main section tag
+         -->
+        <section class="mt-8">
+            <!--
+                 ! Grid of 3 coloum 
+                -->
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <!-- 
+                    ! Deposite Grid div 
+                -->
+                <div class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-2xl">Deposite</h3>
+                    <h4 class="text-5xl">$<span id="deposite-Amount">00</span> </h4>
+                </div>
+                <!--
+                     ! Withdraw Gird div
+                     -->
+                <div class="bg-red-400 p-8 rounded">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-5xl">$<span id="withdraw-Amount">00</span> </h4>
+                </div>
+                <div class="bg-yellow-400 p-8 rounded">
+                    <h3 class="text-2xl">Current balance</h3>
+                    <h4 class="text-5xl"> $<span id="balance-total">1200</span> </h4>
+                </div>
+            </div>
+        </section>
+        <!-- 
+            ! Deposite and Withdraw interaction 
+        -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <!--
+                     ! deposite section div start
+                -->
+                <div class="bg-green-500 p-8 rounded">
+                    <h3 class="text-2xl font-bold">Please Deposite</h3>
+                    <div>
+                        <input id="deposite" class="border-2 rounded border-gray-400 block mb-4 w-3/4 px-2" type="text"
+                            placeholder="Enter your amount $ to deposite">
+                        <button id="deposite-btn"
+                            class="bg-green-800 px-4 rounded py-2 font-bold text-white">Deposite</button>
+                    </div>
+                </div>
+                <!--
+                     ? deposite section div end
+                -->
+                <!--
+                     ! withdraw section div start
+                     -->
+                <div class="bg-red-500 p-8 rounded">
+                    <h3 class="text-2xl font-bold">Withdraw Amount</h3>
+                    <div>
+                        <input id="withdraw" class="border-2 rounded border-gray-400 block mb-4 w-3/4 px-2" type="text"
+                            placeholder="Enter your amount $ to withdraw">
+                        <button id="withdraw-btn"
+                            class="bg-red-800 px-4 rounded py-2 font-bold text-white">Withdraw</button>
+                    </div>
+                </div>
+                <!--
+                     ? withdraw section div end
+                     -->
+            </div>
+        </section>
+        <!-- 
+            ? Deposite and Withdraw interaction 
+        -->
+    </main>
+
+    <script src="js/funcitonal-banking.js"></script>
+</body>
+
+</html>
